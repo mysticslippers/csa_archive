@@ -1,18 +1,18 @@
 .data
-i_addr:				.word 0x80
-o_addr: 			.word 0x84
-n: 				.word 0x0
-i: 				.word 0x2
-a: 				.word 0x0
-b: 				.word 0x1
-one: 				.word 0x1
-minus_one: 			.word -1 
-zero:       			.word 0x0
-tmp: 				.word 0x0
-overflow_const:   		.word 0xcccccccc
-alignment:          		.byte '_'
+i_addr:			.word 0x80
+o_addr: 		.word 0x84
+n: 			.word 0x0
+i: 			.word 0x2
+a: 			.word 0x0
+b: 			.word 0x1
+one: 			.word 0x1
+minus_one: 		.word -1 
+zero:       		.word 0x0
+tmp: 			.word 0x0
+overflow_const:   	.word 0xcccccccc
 
 .text
+.org 0x88
 _start:
 	load_ind 		i_addr
 	store  			n
